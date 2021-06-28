@@ -10,5 +10,5 @@ RUN yum makecache \
     && yum clean headers \
     && yum clean packages \
     && yum clean metadata \
-    && cd /usr/local/java-lib \
+    && mkdir -p /usr/local/java-lib &&  cd /usr/local/java-lib \
     && curl -O https://arthas.aliyun.com/arthas-boot.jar
